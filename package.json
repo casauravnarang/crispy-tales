@@ -1,10 +1,13 @@
 {
+  "homepage": "https://casauravnarang.github.io/crispy-tales",
   "name": "crispy-tales",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -12,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
+    "gh-pages": "^6.3.0",
     "vite": "^6.3.4"
   }
 }
